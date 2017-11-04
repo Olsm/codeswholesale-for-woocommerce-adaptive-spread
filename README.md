@@ -1,4 +1,4 @@
-# Adaptive spread for CodesWholesale for WooCommerce
+# CodesWholesale Adaptive spread
 Automatic spread based on product prices for CodesWholesale for WooCommerce
 
 ## Requirements
