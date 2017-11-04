@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Adaptive spread for CodesWholesale for WooCommerce
+Plugin Name: CodesWholesale for WooCommerce Adaptive spread
 Description: Automatic spread based on product prices for CodesWholesale for WooCommerce
 Version: 1.0.0
 Author: Olav Småriset
