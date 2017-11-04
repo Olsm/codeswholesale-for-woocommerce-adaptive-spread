@@ -7,7 +7,6 @@ Author: Olav Småriset
 */
 
 add_filter('codeswholesale_calculate_spread', 'calculateSpreadCustom', 10, 2);
-add_filter('codeswholesale_update_product_price', 'updateProductPrice', 10, 3);
 
 /**
  * Update price and stock.
@@ -42,18 +41,4 @@ function calculateSpreadCustom($priceSpread, $price) {
 
     $price = $price + ($price / 100 * $priceSpread);
     return round($price, 2);
-}
-
-/**
- * @param true $doUpdatePrice
- * @param int $postId
- * @param double $newPrice
- * @return false
- */
-function updateProductPrice($doUpdatePrice, $postId, $newPrice){
-    if ($newPrice > 0) {
-        update_post_meta($postId, '_price', $newPrice);
-        update_post_meta($postId, '_sale_price', $newPrice);
-    }
-    return !$doUpdatePrice;
 }
