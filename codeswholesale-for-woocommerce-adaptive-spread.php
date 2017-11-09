@@ -23,9 +23,7 @@ function calculateSpreadCustom($priceWithSpread, $spreadParams, $price) {
         return $priceWithSpread;
     }
 
-    if ($price>=45) {
-        $priceSpread = 5;
-    } elseif ($price >= 40) {
+    if ($price >= 40) {
         $priceSpread = 10;
     } elseif ($price >= 35) {
         $priceSpread = 15;
